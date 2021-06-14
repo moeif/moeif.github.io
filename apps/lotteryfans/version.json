@@ -3,7 +3,7 @@
     "num_version": 100,
     "update_content": "",
     "data_url_list": [
-        "http://lotteryfansch1.moeif.com",
-        "http://lotteryfansjp1.moeif.com"
+        "http://lotteryfansch1.moeif.com:9999",
+        "http://lotteryfansjp1.moeif.com:9999"
     ]
 }
