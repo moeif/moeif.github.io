@@ -1,0 +1,74 @@
+{
+	"Android": [
+		{
+			"Bundle": "com.moeif.poemstars",
+			"Infos": [
+				{
+					"Region": "Chinese",
+					"Name": "诗仙与诗魔",
+					"Des": "一个可以匹配挑战的诗词pk游戏",
+					"Url": "",
+					"State": "OK"
+				},
+				{
+					"Region": "English",
+					"Name": "PoemStars",
+					"Des": "",
+					"Url": "",
+					"State": "OK"
+				}
+			]
+		},
+		{
+			"Bundle": "com.moeif.zombiedash",
+			"Infos": [
+				{
+					"Region": "Chinese",
+					"Name": "音乐与僵尸（ZombieDash）",
+					"Des": "使用音符的力量，摧毁来袭的丧尸",
+					"Url": "",
+					"State": "NONE"
+				},
+				{
+					"Region": "English",
+					"Name": "ZombieDash",
+					"Des": "",
+					"Url": "",
+					"State": "NONE"
+				}
+			]
+		}
+	],
+	"iOS": [
+		{
+			"Bundle": "com.moeif.poemstars",
+			"Infos": [
+				{
+					"Region": "Chinese",
+					"Name": "诗仙与诗魔",
+					"Des": "一个可以匹配挑战的诗词pk游戏",
+					"Url": ""
+				}
+			]
+		},
+		{
+			"Bundle": "com.moeif.zombiedash",
+			"Infos": [
+				{
+					"Region": "Chinese",
+					"Name": "音乐与僵尸（ZombieDash）",
+					"Des": "使用音符的力量，摧毁来袭的丧尸",
+					"Url": "",
+					"State": "NONE"
+				},
+				{
+					"Region": "English",
+					"Name": "ZombieDash",
+					"Des": "",
+					"Url": "",
+					"State": "NONE"
+				}
+			]
+		}
+	]
+}
