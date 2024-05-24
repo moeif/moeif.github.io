@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <!-- 引入Bootstrap CSS（国内源） -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            padding: 10px;
+        }
+        .store-header {
+            background-color: #007bff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .store-header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .store-content {
+            margin-top: 20px;
+/*            border:1px solid red;*/
+        }
+        .package-card {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+/*            min-width: 1000px;*/
+        }
+
+        .package-card a {
+            text-decoration: none;
+        }
+
+        .package-info {
+            display: flex;
+            align-items: center;
+        }
+        .package-info img {
+            min-width: 100px;
+            min-height: 100px;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .package-title {
+            font-size: 1.25rem;
+            margin: 0;
+        }
+        .package-subtitle {
+            font-size: 0.875rem;
+            color: #666;
+        }
+        .package-price {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 1.25rem;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .package-price:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header class="store-header">
+        <h1>请作者喝饮料</h1>
+        <p></p>
+    </header>
+    <main class="container store-content" id="store-content">
+        <!-- 礼包卡片将由JavaScript动态生成 -->
+    </main>
+    <!-- 嵌入JSON数据 -->
+    <script id="data" type="application/json">
+    [
+        {
+            "image": "38.jpeg",
+            "name": "督促作者学习，别摸鱼",
+            "description": "为了表示感谢，送您<br>1.永久免广告<br>2.龙晶x10000<br>3.无限存档卡",
+            "price": "去看看",
+            "url": "https://meowsay.com"
+        },
+        {
+            "image": "38.jpeg",
+            "name": "请作者喝巴黎水",
+            "description": "为了表示感谢，送您<br>1.永久免广告<br>2.龙晶x10000<br>3.无限存档卡",
+            "price": "去看看",
+            "url": "https://meowsay.com"
+        },
+        {
+            "image": "path/to/image3.jpg",
+            "name": "1800 Diamonds",
+            "description": "Chest of Diamonds",
+            "price": "8.09 €",
+            "url": "https://meowsay.com"
+        },
+        {
+            "image": "path/to/image4.jpg",
+            "name": "4500 Diamonds",
+            "description": "Vault of Diamonds",
+            "price": "16.19 €",
+            "url": "https://meowsay.com"
+        },
+        {
+            "image": "path/to/image5.jpg",
+            "name": "10000 Diamonds",
+            "description": "Mountain of Diamonds",
+            "price": "32.39 €",
+            "url": "https://meowsay.com"
+        }
+    ]
+    </script>
+    <!-- 引入Bootstrap JS和依赖（国内源） -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // 读取嵌入的JSON数据并生成礼包卡片
+        const dataElement = document.getElementById('data');
+        const packages = JSON.parse(dataElement.textContent);
+        const storeContent = document.getElementById('store-content');
+        packages.forEach(pkg => {
+            const packageCard = document.createElement('div');
+            packageCard.classList.add('package-card');
+            packageCard.innerHTML = `
+                <div class="package-info">
+                    <img src="${pkg.image}" alt="${pkg.name}">
+                    <div>
+                        <p class="package-title">${pkg.name}</p>
+                        <p class="package-subtitle">${pkg.description}</p>
+                    </div>
+                </div>
+                <a href="${pkg.url}">
+                <div class="package-price">${pkg.price}</div>
+                </a>
+            `;
+            storeContent.appendChild(packageCard);
+        });
+    </script>
+</body>
+</html>
