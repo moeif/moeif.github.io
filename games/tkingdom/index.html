@@ -1,55 +1,120 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>异世界废物摆烂崛起之无限启灵</title>
-    <!-- 引入Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Your Game Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .banner {
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner-text h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        .game-intro {
+            padding: 50px 20px;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-item {
+            max-width: 250px;
+        }
+
+        .feature-item img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .download-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .download-button {
+            background-color: #FF4500;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.5rem;
+        }
+
+        .download-button:hover {
+            background-color: #ff2200;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="container py-5">
-        <!-- 游戏宣传大图卡片 -->
-        <div class="row mb-4 justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <img src="tkingdom.png" class="card-img-top" alt="游戏宣传大图">
-                </div>
 
-                <p></p>
 
-                <div class="lead">
-                    你因为过度熬夜，在有一天晚上终于如愿以偿猝死了。当时你正在准备下载一个叫《异世界废物摆烂崛起之无限启灵》的游戏，所以你因此被一股神奇的力量拉进了这个游戏的世界，并意外觉醒了启灵骷髅的能力。只要你不断地挖坟！挖坟！挖坟！获得骨头，你就可以启灵出自己的骷髅随从。让他们帮你挖矿，种田，钓鱼，建造，终于你在自己的领地，崛起为异世界的王。
-                </div>
-            </div>
-        </div>
-
-        <!-- 跳转按钮，居中显示 -->
-        <div class="row mb-4">
-            <div class="col text-center">
-                <a href="https://l.taptap.cn/NhJRtyXn?channel=rep-rep_pq36ua7wwae" class="btn btn-dark btn-lg"
-                    target="_blank">TapTap</a>
-                <a href="#" class="btn btn-dark btn-lg" target="_blank">好游快曝</a>
-                <a href="#" class="btn btn-dark btn-lg" target="_blank">AppStore</a>
-                <a href="#" class="btn btn-dark btn-lg" target="_blank">Steam</a>
-            </div>
-        </div>
-
-        <!-- 联系信息，居中显示 -->
-        <br>
-        <br>
-        <div class="row">
-            <div class="col text-center">
-                <p>联系我们: meowsaygames@outlook.com</p>
-            </div>
+    <div class="banner" style="background-image: url('banner.jpg');">
+        <div class="banner-text">
+            <h1 style="text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;">异世界废物摆烂崛起之无限启灵
+            </h1>
+            <p style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;">像我这样的废物，都能摆烂成神
+                ！</p>
         </div>
     </div>
 
-    <!-- 引入Bootstrap JS（如果需要Bootstrap组件的JavaScript功能） -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <section class="game-intro">
+        <h2>简介</h2>
+        <p style="padding-left: 20%; padding-right: 20%;">
+            你因为过度熬夜，在有一天晚上终于如愿以偿猝死了。当时你正在准备下载一个叫《异世界废物摆烂崛起之无限启灵》的游戏，所以你因此被一股神奇的力量拉进了这个游戏的世界，并意外觉醒了启灵骷髅的能力。只要你不断地挖坟！挖坟！挖坟！获得骨头，你就可以启灵出自己的骷髅随从。让他们帮你挖矿，种田，钓鱼，建造，终于你在自己的领地，崛起为异世界的王。
+        </p>
+        <!-- <div class="features-grid">
+            <div class="feature-item">
+                <img src="tkingdom.png" alt="Feature 1">
+                <h3>Epic Battles</h3>
+                <p>Experience 6v6 intense combat with strategic depth and stunning visuals.</p>
+            </div>
+            <div class="feature-item">
+                <img src="tkingdom.png" alt="Feature 2">
+                <h3>Open World Exploration</h3>
+                <p>Explore vast regions filled with hidden secrets and challenging quests.</p>
+            </div>
+            <div class="feature-item">
+                <img src="tkingdom.png" alt="Feature 3">
+                <h3>Build Your Empire</h3>
+                <p>Construct your own domain, recruit allies, and grow your power.</p>
+            </div>
+        </div> -->
+        <div class="download-section">
+            <a href="https://l.taptap.cn/VHVlKiXP?channel=rep-rep_qyomwuqaqyy" class="download-button">去 TapTap 下载</a>
+        </div>
+    </section>
+
+
+
+
+
 </body>
 
 </html>
