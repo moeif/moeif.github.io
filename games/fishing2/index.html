@@ -1,104 +1,124 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>钓海2</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
-    .container {
-      width: 80%;
-      margin: 20px auto;
+    .banner {
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
       text-align: center;
     }
 
-    .game-card {
-      max-width: 900px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: 0 auto;
-      /* 居中显示 */
+    .banner-text h1 {
+      font-size: 4rem;
+      margin: 0;
     }
 
-    .game-image {
-      max-width: 100%;
-      height: auto;
-      border-radius: 15px;
-      display: block;
-      /* 使图片在容器中水平居中 */
-      margin: 0 auto;
+    .game-intro {
+      padding: 50px 20px;
+      background-color: #f7f7f7;
+      text-align: center;
     }
 
-    .game-description {
-      margin-top: 20px;
-      font-size: 16px;
-      max-width: 800px;
-      margin: 0 auto;
+    .features-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
     }
 
-    .download-buttons {
-      margin-top: 20px;
+    .feature-item {
+      max-width: 250px;
+    }
+
+    .feature-item img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .download-section {
+      padding: 40px;
+      text-align: center;
     }
 
     .download-button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 0 10px;
-      font-size: 16px;
+      background-color: #FF4500;
+      color: white;
+      padding: 15px 30px;
       text-decoration: none;
-      color: #fff;
       border-radius: 5px;
+      font-size: 1.5rem;
     }
 
-    .download-button:nth-child(1) {
-      background-color: #1dbfc6;
-    }
-
-    .download-button:nth-child(2) {
-      background-color: #27ae60;
-    }
-
-    .download-button:nth-child(3) {
-      background-color: #e74c3c;
-    }
-
-    .contact-info {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 16px;
+    .download-button:hover {
+      background-color: #ff2200;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="game-card">
-      <img class="game-image" src="game_image.png" alt="游戏宣传图">
+
+
+  <div class="banner" style="background-image: url('banner.jpg');">
+    <div class="banner-text">
+      <h1 style="text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;">钓海2
+      </h1>
+      <p style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;">
+        清醒，畸变，疯狂，仅仅只为了在克苏鲁中钓海...
+        ！</p>
+      <div class="download-section">
+        <a href="https://l.taptap.cn/nkAqMBzp?channel=rep-rep_nziocbsecso" class="download-button">去 TapTap 下载</a>
+      </div>
     </div>
-    <div class="game-description">
-      <h1>钓海2</h1>
-      <p>垂钓，钓竿，鱼饵，渔网，渔业市场，垂钓协会，召唤，眷者，对战，阴暗背景，克苏鲁，大航海，种田，国王，池塘。新时代下隐秘的角落，潜藏的命运在诞生时已经注定。</p>
-    </div>
-    <div class="download-buttons">
-      <a class="download-button" href="https://tap.cn/33s9djEh?channel=rep-rep_tmiuaazt1vq" target="_blank">TapTap
-        下载</a>
-      <!--  <a class="download-button" href="https://appstore.example.com" target="_blank">App Store</a>
-    <a class="download-button" href="https://www.example.com/game_download" target="_blank">官方网站</a> -->
-    </div>
+
+
   </div>
 
-  <div class="contact-info">
-    联系我们：meowsaygames@outlook.com
-  </div>
+  <section class="game-intro">
+    <h2>简介</h2>
+    <p style="padding-left: 20%; padding-right: 20%;">
+      垂钓，钓竿，鱼饵，渔网，渔业市场，垂钓协会，召唤，眷者，对战，阴暗背景，克苏鲁，大航海，种田，国王，池塘。新时代下隐秘的角落，潜藏的命运在诞生时已经注定。
+    </p>
+
+    <!-- <div class="features-grid">
+            <div class="feature-item">
+                <img src="tkingdom.png" alt="Feature 1">
+                <h3>Epic Battles</h3>
+                <p>Experience 6v6 intense combat with strategic depth and stunning visuals.</p>
+            </div>
+            <div class="feature-item">
+                <img src="tkingdom.png" alt="Feature 2">
+                <h3>Open World Exploration</h3>
+                <p>Explore vast regions filled with hidden secrets and challenging quests.</p>
+            </div>
+            <div class="feature-item">
+                <img src="tkingdom.png" alt="Feature 3">
+                <h3>Build Your Empire</h3>
+                <p>Construct your own domain, recruit allies, and grow your power.</p>
+            </div>
+        </div> -->
+
+  </section>
+
+
+
+
 
 </body>
 
